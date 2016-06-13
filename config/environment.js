@@ -6,7 +6,7 @@ module.exports = function(environment) {
       apiKey: "AIzaSyCClH-wD189SW0x64iVtQ-UdMRArk9m91E",
       authDomain: "ember-answers.firebaseapp.com",
       databaseURL: "https://ember-answers.firebaseio.com",
-      storageBucket: "",
+      storageBucket: "ember-answers.appspot.com",
     },
     modulePrefix: 'ember-answers',
     environment: environment,
