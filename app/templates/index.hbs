@@ -1,1 +1,5 @@
-{{outlet}}
+<ul>
+  {{#each model as |post|}}
+     <li>{{post.author}}'s {{post.body}} in {{post.notes}}</li>
+  {{/each}}
+</ul>
