@@ -1,5 +1,5 @@
 <ul>
   {{#each model as |post|}}
-     <li>{{post.author}}'s {{post.body}} in {{post.notes}}</li>
+     {{post-tile post=post destroyPost="destroyPost"}}
   {{/each}}
 </ul>
