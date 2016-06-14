@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>{{#link-to "index"}}<a>Home</a>{{/link-to}}</li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  {{outlet}}
+</div>
