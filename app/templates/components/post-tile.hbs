@@ -3,5 +3,6 @@
   {{post.body}}
   <br>
   Author: {{post.author}}
+  {{update-post post=post update="update"}}
   <button {{action 'delete' post}}>Delete</button>
 </li>
