@@ -1,8 +1,5 @@
 <li>
-  <!-- {{#link-to 'post' post.id}} {{/link-to}} -->
-  {{post.body}}
+  {{#link-to 'post' post.id}} {{post.body}} {{/link-to}}
   <br>
   Author: {{post.author}}
-  {{update-post post=post update="update"}}
-  <button {{action 'delete' post}}>Delete</button>
 </li>
