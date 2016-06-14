@@ -17,6 +17,19 @@ export default Ember.Route.extend({
     destroyPost(post) {
       post.destroyRecord();
       this.transitionTo('index');
+    },
+    saveAnswer(params) {
+      Ember.Logger.log(params);
+      var newAnswer = this.store.createRecord('answer', params);
+      var post = params.post;
+      Ember.Logger.log(newAnswer);
+      post.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return post.save();
+      });
+      Ember.Logger.log(post);
+      this.transitionTo('post', params.post);
     }
+
   }
 });

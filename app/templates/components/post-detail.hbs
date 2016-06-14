@@ -3,4 +3,10 @@
 {{post.author}}
 <br>
 {{post.notes}}
+{{#each post.answers as |answer|}}
+  {{answer.body}}
+  <br>
+  {{answer.author}}
+{{/each}}
+<br>
 <a class="waves-effect waves-light btn-large" {{action 'delete' post}}>Delete</a>
