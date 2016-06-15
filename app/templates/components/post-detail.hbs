@@ -1,12 +1,29 @@
-{{post.body}}
-<br>
-{{post.author}}
-<br>
-{{post.notes}}
+
+<div class="card blue-grey darken-">
+  <div class="card-content white-text">
+    <span class="card-title activator grey-text text-darken-4">{{post.author}}'s Question:<i class="material-icons right">more_vert</i></span>
+    <p>{{post.body}}</p>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Notes from the Author:<i class="material-icons right">close</i></span>
+    <p>{{post.notes}}</p><a class="btn-floating btn-large waves-effect waves-light red hoverable" {{action 'delete' post}}><i class="material-icons">not_interested</i></a>
+
+  </div>
+</div>
+
 {{#each post.answers as |answer|}}
-  {{answer.body}}
-  <br>
-  {{answer.author}}
+<div class="card">
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Answer:<i class="material-icons right">more_vert</i></span>
+    <p>{{answer.body}}</p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Author:<i class="material-icons right">close</i></span>
+    <p>{{answer.author}}</p>
+  </div>
+</div>
 {{/each}}
 <br>
-<a class="waves-effect waves-light btn-large" {{action 'delete' post}}>Delete</a>

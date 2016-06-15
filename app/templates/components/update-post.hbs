@@ -18,9 +18,9 @@
           {{input value=notes id="notes" placeholder=post.notes}}
         </div>
 
-        <button {{action 'update' post}}>Save</button>
+        <a class="waves-effect waves-light btn-large" {{action 'update' post}}>Save</a>
       </form>
     </div>
 {{else}}
-    <button {{action 'updatePostForm'}}>Update</button>
+    <a class="waves-effect waves-light btn-large" {{action 'updatePostForm'}}>Update</a>
 {{/if}}
