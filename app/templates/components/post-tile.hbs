@@ -3,6 +3,7 @@
         <div class="card-content white-text">
           <span class="card-title">{{post.author}}'s Question {{post-popularity post}}{{no-answers post}}</span>
           <p>{{post.body}}</p>
+          <a class="btn-floating btn-large waves-effect waves-light red hoverable" {{action 'addToFavorites' post}}><i class="material-icons">playlist_add</i></a>
         </div>
         <div class="card-action">
           {{#link-to 'post' post.id}}<a>More Info</a>{{/link-to}}
