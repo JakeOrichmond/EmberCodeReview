@@ -1,4 +1,4 @@
-# Ember Answers
+# Just Assk
 
 This is a simple app built with Ember.js, it allows users to post a question, the question is saved and other users can see details about the questions and add answers.
 
@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/vladtheinhaler23/Code-Review-6-10-16-Ember-JS.git` this repository
+* `git clone https://github.com/JakeOrichmond/EmberCodeReview.git`
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -43,7 +43,7 @@ _No known bugs_
 
 ## Support and contact details
 
-_If you need help please check the Contact me at joshlogan32323@gmail.com_
+_If you need help please check the Contact me at jakeorichmond@gmail.com_
 
 ## Technologies Used
 
@@ -53,7 +53,7 @@ _JavaScript, Ember.js, Firebase, JSON, Materialize CSS and HTML_
 
 *This webpage was created under the MIT license*
 
-Copyright (c) 2016 **_Joshua Logan_**
+Copyright (c) 2016 **_Jake Richmond_**
 
 ## Further Reading / Useful Links
 
